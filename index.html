@@ -3,6 +3,7 @@
   <head>
     <title>Hello, WebVR! - A-Frame</title>
     <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v$npm_package_version/dist/aframe-physics-system.min.js"></script>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
   </head>
   <body>
@@ -12,10 +13,10 @@
         <a-torus-knot position="-3 1 -5" src="./space.png"></a-torus-knot>
         <a-dodecahedron position="3 1 -5" src="./freddyfazbear.jpg" rotation="0 110 0"></a-dodecahedron>
         <a-box position="-1 2.5 -3" rotation="0 0 0" src="./Saul_2009.webp"></a-box>
-        <a-sphere position="0 1.25 -3" radius="1.25" rotation="0 270 0" src="./wheatly.webp">
+        <a-sphere dynamic-body position="0 1.25 -3" radius="1.25" rotation="0 270 0" src="./wheatly.webp">
           <a-ring position="-2 2 -2" rotation="0 90 0" src="./minecraftgrass.webp"></a-ring>
         </a-sphere>
-        <a-cylinder position="-3 0.75 -3" radius="0.5" height="1.5" rotation="0 180 0" src="./squidward.jpg"></a-cylinder>
+        <a-cylinder dynamic-body position="-3 0.75 -3" radius="0.5" height="1.5" rotation="0 180 0" src="./squidward.jpg"></a-cylinder>
         <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       </a-entity>
       <a-sky color="#ECECEC"></a-sky>
